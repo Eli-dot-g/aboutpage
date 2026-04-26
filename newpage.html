@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
+<h1>Кліки: <span id="count">0</span></h1>
+<button onclick="clicker()">КЛІКАЙ</button>
+
+<script>
+  let count = 0;
+
+  function clicker() {
+    count++;
+    document.getElementById("count").textContent = count;
+  }
+</script>
 
 </body>
 </html>
